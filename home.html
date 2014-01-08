@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> 
+		When Did My Parents Bang | Conception Date Calculator
+	</title>
+	<link rel="shortcut icon" href="Logo200.jpg" type="image/x-icon">
+	<meta name="keywords" content="When did my parents bang,WDMPB,Conception Calculator,intercourse,birthday,conception,bangday">
+	<meta name="description" content="When Did My Parents Bang is a web app that provides the answer to life's biggest quesiton- the day that your parents had sex which resulted in your conception">
+	<link type="text/css" rel="stylesheet" media="all" href="styleCopy.css">
+	<link type="text/css" rel="stylesheet" media="all" href="progressBarStyle.css">
+	<link rel="stylesheet" href="jquery-ui-1.10.3.custom.css">
+	<script type="text/javascript" language="Javascript" src="http://code.jquery.com/jquery-1.10.2.js">
+	</script>
+	<script type="text/javascript" language="Javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js">
+	</script>
+	<script src="script.js" type="text/javascript" ></script>
+	
+</head>
+<body>
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) { //facebook api such
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+
+	<div id="wrapper">
+		<div id="header">
+			<div id="tile1">
+				W
+			</div>
+			<div id="tile2">
+				D
+			</div>
+			<div id="tile3">
+				M
+			</div>
+			<div id="tile4">
+				P
+			</div>
+			<div id="tile5">
+				B
+			</div>
+			<div id="headerTitle">
+				<h1>When Did My Parents Bang</h1>
+				<h2>Answering Life's Biggest Question</h2>
+			</div>
+		</div>
+	<div id="content">
+		<div id="module">
+			<div id="moduleHeader">
+				When were you born?
+			</div>
+			<div id="moduleFields">
+				<div id="moduleDate">
+					<textarea id="month" spellcheck='false' maxlength="8" placeholder="Month" required></textarea>
+					<textarea id="day" spellcheck='false' maxlength="2" placeholder="Day" required></textarea>
+					<textarea id="year" spellcheck='false' maxlength="4" placeholder="Year" required></textarea>
+				</div>
+			</div>
+					<div id="moduleExpand">
+						<div id="moduleExpandTitle">
+							<h3>Advanced </h3>
+							<div id="METB">
+							Born Prematurely <input type="checkbox" id="premature"> Estimated Number of Days: <input type="text" id="daysPremature" size="2"><br><input type="radio" name="birth" id="radio1">Single <input type="radio" name="birth" id="radio2" value="birth">Twin <input type="radio" name="birth" id="radio3" value="birth">Triplet <input type="radio" name="birth" id="radio4">Quadruplet <input type="radio" name="birth" id="radio5">Quintuplet<br>Child Number: <input type="text" id="childNumber" size ="2"> Mother's Age At Your Birth: <input type="text" id="mothersAge" size ="2">
+							</div>
+						</div>
+					</div>
+			<div id="moduleSubmit">
+				<button type="submit" id="submit">Get Bangday</button>
+				<button type="button" id="reset">Reset</button>
+				<button type="button" id="fbLogin">Facebook Login</button>
+				<!--<div class="fb-login-button" data-width="56" data-height="36" data-show-faces="false"></div> facebook login button, screwy with scope-->
+				<button type="button" id="fbLogout" style="display:none">Logout</button>		
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		Copyright 2014
+		<a href="http://wdmpb.com"> 
+			WDMPB | Answering Life's Biggest Question 
+		</a>
+	</div>
+</div>
+</body>
+</html>
