@@ -85,7 +85,7 @@ body{
 	/*margin-top: -195px; /*this is crazy!!*/
 	min-height: calc(100% - 170px);
 	height: calc(100% - 170px);
-	background-image: url(cloudBG.jpg);
+	background-image: url(../img/cloudBG.jpg);
 	 display: block;
 	  background-position: initial initial;
 	 background-repeat: initial initial;
@@ -238,17 +238,17 @@ button[id="redo"]{
 
 @font-face {
 	font-family: Art_Brewery;
-	src: url('Art Brewery.ttf');
+	src: url('../fonts/Art Brewery.ttf');
 }
 @font-face {
 	font-family: Respective;
-	src: url('Respective_2.ttf');
+	src: url('../fonts/Respective_2.ttf');
 }
 @font-face {
 	font-family: TOSCA;
-	src: url('TOSCA.ttf');
+	src: url('../fonts/TOSCA.ttf');
 }
 @font-face {
 	font-family: Diskoteque;
-	src: url('Diskoteque.ttf');
+	src: url('../fonts/Diskoteque.ttf');
 }
