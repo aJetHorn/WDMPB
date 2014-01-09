@@ -85,7 +85,7 @@ body{
 	/*margin-top: -195px; /*this is crazy!!*/
 	min-height: calc(100% - 170px);
 	height: calc(100% - 170px);
-	background-image: url(../img/cloudBG.jpg);
+	background-image: url(cloudBG.jpg);
 	 display: block;
 	  background-position: initial initial;
 	 background-repeat: initial initial;
@@ -218,18 +218,29 @@ button[id="redo"]{
 }
 #footer{
 	/*min-width: 300px;*/
+	padding-top: 10px;
 	color: #FFF;
 	text-align: center;
 	position: absolute;
 	bottom: 0px;
-	height: 20px;
+	height: 30px;
 	min-width: 1160px;
 	width: 100%;
-	background: #67E4FF;
+	background: #7f81FF;
 }
 #footer a{
 	text-decoration: none;
 	color: #FFF;
+}
+#footerText{
+	margin: auto;
+	width: 600px;
+	min-width: 600px;
+	font-size: 18px;
+}
+#footerLeft{
+	padding-left: 60px;
+	float:left;
 }
 #signature{
 	text-align: right;
@@ -238,17 +249,17 @@ button[id="redo"]{
 
 @font-face {
 	font-family: Art_Brewery;
-	src: url('../fonts/Art Brewery.ttf');
+	src: url('Art Brewery.ttf');
 }
 @font-face {
 	font-family: Respective;
-	src: url('../fonts/Respective_2.ttf');
+	src: url('Respective_2.ttf');
 }
 @font-face {
 	font-family: TOSCA;
-	src: url('../fonts/TOSCA.ttf');
+	src: url('TOSCA.ttf');
 }
 @font-face {
 	font-family: Diskoteque;
-	src: url('../fonts/Diskoteque.ttf');
+	src: url('Diskoteque.ttf');
 }
