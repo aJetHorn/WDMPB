@@ -4,31 +4,15 @@ $(document).ready(function(){
 	var canProceed = true;
 	var bangDay = "";
 
-	$("#METB").click(function(){ //this negates expansion!!!
-		expanded = 0;
-	})
+	$("#advanced").click(function(){
+		var advancedContent = $('#advanced-content');
+		if (advancedContent.is(':visible')) {
+			advancedContent.slideUp();
+		} else {
+			advancedContent.slideDown();
+		}
+	});
 
-	$("#moduleExpand").click(function(){
-		//alert("clicked");
-		if (expanded == 0){
-			$("#module").animate({
-				height: "335px"
-			})
-			$("#moduleSubmit").animate({
-				marginTop: "85px"
-			});
-			expanded = 1;
-		}
-		else if (expanded == 1){
-			$("#module").animate({
-				height: "250px"
-			})
-			$("#moduleSubmit").animate({
-				marginTop: "0px"
-			});
-			expanded = 0;
-		}
-	})
 	$('body').delegate('#fbLogin','click',function() {
 		FB.login(function(response) {}, {scope: 'user_birthday'});
 		return false;
@@ -129,18 +113,7 @@ $(document).ready(function(){
 		//$('#month').css("line-height", "76px");
 		$("#day").val("");
 		$("#year").val("");
-		if (expanded == 1){ //resets accordian
-			$("#module").animate({
-				height: "250px"
-			});
-			$("#moduleSubmit").animate({
-				marginTop: "0px",
-			});
-			expanded = 0;
-			$( "#moduleExpandTitle" ).accordion({
-					active: false
-			});
-		}
+
 		$("#premature").attr('checked',false);
 		$("#daysPremature").val("");
 		$("#radio1").attr('checked',false); //unchecks radio buttons
@@ -450,13 +423,6 @@ $(document).ready(function(){
 			return 0;
 		}
 	}
-});
-
-$(function() {
-	$( "#moduleExpandTitle" ).accordion({
-		collapsible: true,
-			active: false
-	});
 });
 
 $(function() {
