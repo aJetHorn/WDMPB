@@ -241,17 +241,17 @@ button[id="redo"]{
 
 @font-face {
 	font-family: Art_Brewery;
-	src: url('Art Brewery.ttf');
+	src: url('../fonts/Art Brewery.ttf');
 }
 @font-face {
 	font-family: Respective;
-	src: url('Respective_2.ttf');
+	src: url('../fonts/Respective_2.ttf');
 }
 @font-face {
 	font-family: TOSCA;
-	src: url('TOSCA.ttf');
+	src: url('../fonts/TOSCA.ttf');
 }
 @font-face {
 	font-family: Diskoteque;
-	src: url('Diskoteque.ttf');
+	src: url('../fonts/Diskoteque.ttf');
 }
