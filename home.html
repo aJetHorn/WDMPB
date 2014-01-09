@@ -13,8 +13,6 @@
 	<link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css">
 	<script type="text/javascript" language="Javascript" src="http://code.jquery.com/jquery-1.10.2.js">
 	</script>
-	<script type="text/javascript" language="Javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js">
-	</script>
 	<script src="js/script.js" type="text/javascript" ></script>
 	
 </head>
@@ -63,14 +61,12 @@
 					<textarea id="year" spellcheck='false' maxlength="4" placeholder="Year" required></textarea>
 				</div>
 			</div>
-					<div id="moduleExpand">
-						<div id="moduleExpandTitle">
-							<h3>Advanced </h3>
-							<div id="METB">
-							Born Prematurely <input type="checkbox" id="premature"> Estimated Number of Days: <input type="text" id="daysPremature" size="2"><br><input type="radio" name="birth" id="radio1">Single <input type="radio" name="birth" id="radio2" value="birth">Twin <input type="radio" name="birth" id="radio3" value="birth">Triplet <input type="radio" name="birth" id="radio4">Quadruplet <input type="radio" name="birth" id="radio5">Quintuplet<br>Child Number: <input type="text" id="childNumber" size ="2"> Mother's Age At Your Birth: <input type="text" id="mothersAge" size ="2">
-							</div>
-						</div>
-					</div>
+			<div id="advanced">
+				<h3>Advanced</h3>
+				<div id="advanced-content">
+					Born Prematurely <input type="checkbox" id="premature"> Estimated Number of Days: <input type="text" id="daysPremature" size="2"><br><input type="radio" name="birth" id="radio1">Single <input type="radio" name="birth" id="radio2" value="birth">Twin <input type="radio" name="birth" id="radio3" value="birth">Triplet <input type="radio" name="birth" id="radio4">Quadruplet <input type="radio" name="birth" id="radio5">Quintuplet<br>Child Number: <input type="text" id="childNumber" size ="2"> Mother's Age At Your Birth: <input type="text" id="mothersAge" size ="2">
+				</div>
+			</div>
 			<div id="moduleSubmit">
 				<button type="submit" id="submit">Get Bangday</button>
 				<button type="button" id="reset">Reset</button>
