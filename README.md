@@ -1,6 +1,8 @@
 WDMPB
 =====
-Version 1.0 [initial commit] 1/8/2014 2:49PM
+Version 2.0 [Release] 1/12/14
+
+This is the less refined, more functional version that is (probably) displayed on the website
 
 Here's what you need to know:
 
