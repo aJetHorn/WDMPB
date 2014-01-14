@@ -555,7 +555,7 @@ window.fbAsyncInit = function() {
                 	$("#fbLogin").toggle();
                 	if (!appended){
                 		var pictureURL = "https://graph.facebook.com/" + response.id + "/picture?width=30&height=30";
-                		$("#moduleSubmit").append("<span style=\"margin-left: 55px;\"> Logged in as " + response.name + "<img style=\"margin-bottom: -10px; padding-left: 5px;\" src=" + pictureURL + "></span>");
+                		$("#moduleSubmit").append("<span style=\"margin-left: 35px; font-size: 11px;\"> Logged in as " + response.name + "<img style=\"margin-bottom: -10px; padding-left: 5px;\" src=" + pictureURL + "></span>");
                 		appended = true;
                 	}
                 	$("#fbLogout").toggle();
