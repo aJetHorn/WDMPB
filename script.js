@@ -344,38 +344,40 @@ $(document).ready(function(){
 						var j;
 						var setDown = 0;
 						for (var i = 1; i >= 0; i--){
-							if (subTemp == 0){
-									this.month = j + 1;
-									this.day = this.calendarMonthDate[i][j];
-									break;
-							}
 							if (i === 1){
 								j = m - 1;
+								//alert("j is " + j);
 							}
-							else if ( i == 0 && setDown == 0) {
+							else if ( i == 0) {
 								j = 11;
-								setDown = 1;
 								//alert("subtemp: " + subTemp);
 							}
-							for ( ;j >= 0; j--){
-								if (i == 0){
+							//for ( ;j >= 0; j--){
+								//if (i == 0){
 									//alert("subtemp: " + subTemp);
 									///alert("J: " + j);
 								    //alert("calmontdate: " + this.calendarMonthDate[i][j]); 
-								}
-								while (this.calendarMonthDate[i][j] > 1 && subTemp > 0){
+								//}
+								while (this.calendarMonthDate[i][j] > 0 && subTemp > 0){
+									//alert("days: " + this.calendarMonthDate[i][j] + " subtemp = " + subTemp);
 									this.calendarMonthDate[i][j]--;
 									subTemp--;
+								    if (j == 0 && this.calendarMonthDate[i][j] == 0){
+										break;
+									}
+									else if (this.calendarMonthDate[i][j] == 0){
+										j--;
+									}
 								}
-								if (subTemp === 0){
-									if (i === 0){
+								if (subTemp == 0){
+									if (i == 0){
 										this.year--;
 									}
 									this.month = j + 1;
 									this.day = this.calendarMonthDate[i][j];
 									break;
 								}
-							}
+							//}
 						}
 					}
 					this.getMonthName = function(){
@@ -415,7 +417,7 @@ $(document).ready(function(){
 						return this.getMonthName() + " " + this.day + this.getDaySuffix() + ", " + this.year;
 					}
 					this.modSub = 0;
-					this.subNum = 260; //this is the weighted average of all time spent in the womb
+					this.subNum = 269; //this is the weighted average of all time spent in the womb
 					this.month = m;
 					this.day = d;
 					this.year = y;
@@ -553,7 +555,7 @@ window.fbAsyncInit = function() {
                 	$("#fbLogin").toggle();
                 	if (!appended){
                 		var pictureURL = "https://graph.facebook.com/" + response.id + "/picture?width=30&height=30";
-                		$("#moduleSubmit").append("<span style=\"margin-left: 65px;\"> Logged in as " + response.name + "<img style=\"margin-bottom: -10px; padding-left: 5px;\" src=" + pictureURL + "></span>");
+                		$("#moduleSubmit").append("<span style=\"margin-left: 55px;\"> Logged in as " + response.name + "<img style=\"margin-bottom: -10px; padding-left: 5px;\" src=" + pictureURL + "></span>");
                 		appended = true;
                 	}
                 	$("#fbLogout").toggle();
