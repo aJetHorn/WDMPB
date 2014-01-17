@@ -81,10 +81,10 @@ $(document).ready(function(){
 					$("#module").empty(); //empties out module
 
 					$("#content").animate({ //begins animation
-						"padding-top": "135px",
+						"padding-top": "85px", //was 135
 						"padding-bottom": "35px"
 					}, 500).delay(random + 300).animate({
-						"padding-top": "135px", //was 35
+						"padding-top": "85x", //was 135
 						"padding-bottom": "35px"
 					}, 500);
 					//var marginVal = $(this).marginTop;
@@ -155,9 +155,6 @@ $(document).ready(function(){
 
 				function getBangday(){ //dirt
 					//var month = $('#month').val();
-					//if (isNaN(parseInt(month))){
-					//	alert("what's good my dude?");
-					//}
 					//alert(parseInt(month)); //must parse to int
 					//alert($("#premature").val());
 					var month = parseMonth(); //int!

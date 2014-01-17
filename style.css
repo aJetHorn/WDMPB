@@ -83,15 +83,15 @@ body{
 }
 #content{
 	/*margin-top: -195px; /*this is crazy!!*/
-	min-height: calc(100% - 170px);
-	height: calc(100% - 170px);
-	background-image: url(cloudBG.jpg);
+	min-height: calc(100% - 160px);
+	height: calc(100% - 160px); /*changed from 170*/
+	background-image: url(img/cloudBG.jpg);
 	 display: block;
 	  background-position: initial initial;
 	 background-repeat: initial initial;
 	background-color: #EEE;
 	/*padding-top: 10%;*/
-	padding: 85px 35px 35px 35px; /*top was 135, so -50*/
+	padding: 85px 85px 35px 35px; /*top was 135, so -50*/
 	min-width: 1090px;
 
 }
@@ -249,17 +249,17 @@ button[id="redo"]{
 
 @font-face {
 	font-family: Art_Brewery;
-	src: url('Art Brewery.ttf');
+	src: url('fonts/Art Brewery.ttf');
 }
 @font-face {
 	font-family: Respective;
-	src: url('Respective_2.ttf');
+	src: url('fonts/Respective_2.ttf');
 }
 @font-face {
 	font-family: TOSCA;
-	src: url('TOSCA.ttf');
+	src: url('fonts/TOSCA.ttf');
 }
 @font-face {
 	font-family: Diskoteque;
-	src: url('Diskoteque.ttf');
+	src: url('fonts/Diskoteque.ttf');
 }
