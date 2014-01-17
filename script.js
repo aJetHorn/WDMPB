@@ -465,7 +465,7 @@ $(document).ready(function(){
 							return 12;
 						}
 						else{
-							alert("Invalid Month - use number or full month name")
+							//alert("Invalid Month - use number or full month name")
 							return 0;
 						}
 						
@@ -477,7 +477,7 @@ $(document).ready(function(){
 						return parseInt(day);
 					}
 					else{
-						alert("Invalid day - use a number");
+						//alert("Invalid day - use a number");
 						return 0;
 					}
 				}
@@ -487,7 +487,7 @@ $(document).ready(function(){
 						return parseInt(year);
 					}
 					else{
-						alert("Invalid year - use a four digit number");
+						//alert("Invalid year - use a four digit number");
 						return 0;
 					}
 				}
